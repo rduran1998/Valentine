@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For You ❤️</title>
+  <meta name="theme-color" content="#ff4d6d" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- background ambience -->
+  <div class="bg" aria-hidden="true"></div>
+
+  <!-- butterflies fly above background -->
+  <div class="butterflies" id="butterflies" aria-hidden="true"></div>
+
+  <!-- main content -->
+  <main class="wrap">
+    <header class="top">
+      <div class="badge" aria-hidden="true">❤️</div>
+      <div>
+        <h1 id="headline">Hey, <span id="herName">my love</span></h1>
+        <p class="sub">I made you something small… but from my whole heart.</p>
+      </div>
+    </header>
+
+    <section class="card" id="startCard">
+      <h2>A tiny journey</h2>
+      <p>
+        Put on your favorite song, take a slow breath,
+        and tap the button when you’re ready.
+      </p>
+      <div class="row">
+        <button class="btn" id="startBtn">Begin ✨</button>
+        <button class="btn ghost" id="customizeBtn">Personalize</button>
+      </div>
+      <p class="hint">Tip: This looks best on your phone.</p>
+    </section>
+
+    <section class="card hidden" id="letterCard">
+      <h2>My letter to you</h2>
+      <p class="letter" id="letterText"></p>
+      <div class="row">
+        <button class="btn" id="toMemoriesBtn">Open Memory Lane 🫶</button>
+        <button class="btn ghost" id="skipTypingBtn">Skip typing</button>
+      </div>
+    </section>
+
+    <section class="card hidden" id="memoriesCard">
+      <h2>Memory Lane</h2>
+      <p class="soft">Tap each one. I left a little feeling inside every memory.</p>
+      <div class="grid" id="memoriesGrid"></div>
+      <div class="row">
+        <button class="btn" id="toReasonsBtn">One more thing…</button>
+      </div>
+    </section>
+
+    <section class="card hidden" id="reasonsCard">
+      <h2>Reasons I love you</h2>
+      <p class="soft">Tap to reveal. (I could fill a universe.)</p>
+      <div class="reasons" id="reasonsWrap"></div>
+      <div class="row">
+        <button class="btn" id="toAskBtn">Okay… the question 💌</button>
+      </div>
+    </section>
+
+    <section class="card hidden" id="askCard">
+      <h2>So…</h2>
+      <p class="big">Will you be my Valentine? ❤️</p>
+      <div class="row">
+        <button class="btn yes" id="yesBtn">Yes</button>
+        <button class="btn no" id="noBtn">Not yet</button>
+      </div>
+      <p class="hint" id="tinyHint"></p>
+    </section>
+
+    <section class="card hidden" id="yayCard">
+      <h2>Yay 🥹❤️</h2>
+      <p class="soft">You just made my whole day—no, my whole heart.</p>
+      <p class="final" id="finalLine"></p>
+      <div class="row">
+        <button class="btn" id="replayBtn">Replay ✨</button>
+        <button class="btn ghost" id="copyLinkBtn">Copy link</button>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span id="signature">— yours, always</span>
+    </footer>
+  </main>
+
+  <!-- sunflower field at bottom -->
+  <div class="sunflowers" aria-hidden="true"></div>
+
+  <!-- toast -->
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
